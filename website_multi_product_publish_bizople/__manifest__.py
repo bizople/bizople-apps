@@ -5,7 +5,7 @@
 {
     'name': 'Multi Product Publish/Unpublish',
     'category': 'Website',
-    'version': '15.0.0.0',
+    'version': '17.0.0.0',
     'author': 'Bizople Solutions Pvt. Ltd.',
     'website': 'https://www.bizople.com',
     'summary': 'Multi Product Publish and Unpublish',
