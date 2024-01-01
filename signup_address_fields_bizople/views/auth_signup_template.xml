@@ -35,7 +35,7 @@
                     <input type="zip" name="zip" id="zip" class="form-control form-control-sm" required="required" />
                 </div>
             </div>
-            <div class="mb-2 form-group field-country_id">
+            <div class="mb-3 form-group field-country_id">
                 <label for="country">Country</label>
                 <select id="country_id" name="country_id" class=" form-control form-control-sm">
                     <t t-foreach="country_ids" t-as="d">
@@ -45,7 +45,7 @@
                     </t>
                 </select>
             </div>
-            <div class="mt-1 mb-2 form-group field-state_id">
+            <div class="mb-2 form-group field-state_id">
                 <label for="state">State</label>
                 <select id="state_id" name="state_id" class="form-control form-control-sm" placehoder="select">
                     <option value="0" country_id="0">--select--</option>

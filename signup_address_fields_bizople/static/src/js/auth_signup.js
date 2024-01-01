@@ -1,7 +1,11 @@
-/** @odoo-module **/
+// -*- coding: utf-8 -*-
+// Part of Odoo Module Developed by Bizople Solutions Pvt. Ltd.
+// See LICENSE file for full copyright and licensing details.
 
-    // require('web.dom_ready');
-    import publicWidget from "@web/legacy/js/public/public_widget";
+odoo.define('signup_address_fields_bizople.auth_signup', function(require){
+    'use strict';
+    require('web.dom_ready');
+    var publicWidget = require('web.public.widget');
 
     publicWidget.registry.authsignup = publicWidget.Widget.extend({
         selector: ".field-user-type,.field-country_id",
@@ -56,3 +60,4 @@
             }
         },
     });
+});

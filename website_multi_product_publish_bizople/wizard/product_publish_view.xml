@@ -13,19 +13,19 @@
                 </group>
                 <field name="line_ids">
                     <tree string="Product List" create="false">
-                        <field name="product_id" column_invisible="True"/>
+                        <field name="product_id" invisible="1"/>
                         <field name="product_name" readonly="1"/>
                     </tree>
                     <form string="Product List" create="false">
                         <group>
-                            <field name="product_id" />
+                            <field name="product_id" invisible="1"/>
                             <field name="product_name" readonly="1"/>
                         </group>
                     </form>
                 </field>
                 <footer>
-                    <button string="Publish" invisible = "website_published == 'unpublish'" type="object" class="oe_highlight" name="get_product_publish_unpublish"/>
-                    <button string="Unpublish" invisible = "website_published == 'publish'" type="object" class="oe_highlight" name="get_product_publish_unpublish"/>
+                    <button string="Publish" attrs="{'invisible': [('website_published','=', 'unpublish')]}" type="object" class="oe_highlight" name="get_product_publish_unpublish"/>
+                    <button string="Unpublish" attrs="{'invisible': [('website_published','=', 'publish')]}" type="object" class="oe_highlight" name="get_product_publish_unpublish"/>
                     <button string="Cancel" class="btn-default" special="cancel"/>
                 </footer>
             </form>
