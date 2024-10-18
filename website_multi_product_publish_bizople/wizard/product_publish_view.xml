@@ -12,10 +12,10 @@
                     <field name="website_published" required="1" string="Action"/>
                 </group>
                 <field name="line_ids">
-                    <tree string="Product List" create="false">
+                    <list string="Product List" create="false">
                         <field name="product_id" column_invisible="True"/>
                         <field name="product_name" readonly="1"/>
-                    </tree>
+                    </list>
                     <form string="Product List" create="false">
                         <group>
                             <field name="product_id" />

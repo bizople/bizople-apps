@@ -2,8 +2,8 @@
 # Part of Odoo Module Developed by Bizople Solutions Pvt. Ltd.
 # See LICENSE file for full copyright and licensing details.
 
-from odoo.addons.web.controllers.main import Home,SIGN_UP_REQUEST_PARAMS
-from odoo.addons.web.controllers.home import Home
+# from odoo.addons.web.controllers.main import BaseSetup
+from odoo.addons.web.controllers.home import Home,SIGN_UP_REQUEST_PARAMS
 from odoo.addons.auth_signup.models.res_users import SignupError
 from odoo.exceptions import UserError
 from odoo.http import request
@@ -60,7 +60,6 @@ class Authsignup(Home):
             'country_id': country_id.id,
             'vat':vat
         })
-
         return values
 
 
